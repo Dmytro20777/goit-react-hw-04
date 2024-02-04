@@ -1,26 +1,26 @@
 .item {
-    border-radius: 5px;
-    margin: 10px;
-    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 200px;
+    justify-content: center;
+
+    height: 100%;
+
+    background-color: #f2f2f2;
+
+    border: 4px solid #fff;
+    border-radius: 16px;
+    overflow: hidden;
+
+    min-width: 200px;
+    max-width: 300px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    margin: 10px;
 }
 
-.item img {
-    width: 100%;
-    height: auto;
+.img {
+
 }
-
-
-.item:hover {
-    background-color: #f9cb01;
-}
-

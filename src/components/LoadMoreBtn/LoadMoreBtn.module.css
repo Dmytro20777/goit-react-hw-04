@@ -1,0 +1,21 @@
+.button {
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+    color: lightblue;
+    background-color: transparent;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.button:hover,
+.button:focus {
+    color: white;
+    background-color: lightblue;
+    border-color: white;
+}

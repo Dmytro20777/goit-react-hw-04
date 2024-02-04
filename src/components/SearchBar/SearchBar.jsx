@@ -1,5 +1,6 @@
 import toast from 'react-hot-toast';
 import css from "./SearchBar.module.css";
+import { CiSearch } from "react-icons/ci";
 
 export const SearchBar = ({ onSubmit }) => {
 
@@ -7,7 +8,7 @@ export const SearchBar = ({ onSubmit }) => {
         event.preventDefault();
 
         if (event.target.elements.search.value.trim() === "") {
-            toast.error("Current string")
+            toast.error("Please enter a search query")
             return;
         }
 
@@ -15,18 +16,22 @@ export const SearchBar = ({ onSubmit }) => {
         event.target.reset();
     }
 
+    
+
     return (
         <header>
             <form className={css.form} onSubmit={handleSubmit}>
-                <input
-                    className={css.field}
-                    type="text"
-                    autoComplete="off"
-                    autoFocus
-                    placeholder="Search images and photos"
-                    name="search"
-                />
-                <button className={css.btn} type="search">Search</button>
+                <div className={css.inputContainer}>
+                    <input
+                        className={css.field}
+                        type="text"
+                        autoComplete="off"
+                        autoFocus
+                        placeholder="Search images and photos"
+                        name="search"
+                    />
+                    <button className={css.btn} type="search"><CiSearch/></button>
+                </div>
             </form>
         </header>
     )
