@@ -15,7 +15,7 @@ export const ImageModal = ({ isOpen, closeModal, selectedImage }) => (
       <>
         <div className={css.modalContainer}>
           <button className={css.closeButton} onClick={closeModal}><IoMdClose/></button>
-          <img className={css.image} src={selectedImage.urls.regular} alt={selectedImage.alt_description} />
+          <img className={css.image} src={selectedImage.urls.full} alt={selectedImage.alt_description} />
           <p className={css.likes}>Likes: {selectedImage.likes}</p>
           <p className={css.description}>{ selectedImage.description}</p>
         </div>

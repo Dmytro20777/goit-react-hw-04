@@ -13,5 +13,5 @@ export const fetchimagesWithTopic = async (topic, page) => {
             client_id: ACCESS_KEY,
         }
     });
-    return response.data.results;
+    return response.data
 } 

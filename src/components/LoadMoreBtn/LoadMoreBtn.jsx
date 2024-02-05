@@ -1,9 +1,13 @@
-import css from "./LoadMoreBtn.module.css"
+import css from "./LoadMoreBtn.module.css";
 
-export const LoadMoreBtn = ({ images, loading, onClick }) => {
-    return (
-        <>
-            {images.length > 0 && !loading && (<button onClick={onClick} className={css.button}>Load more</button>)}
-        </>
-    )
-}
+export const LoadMoreBtn = ({onClick, isVisible}) => {
+  return (
+    <>
+      {isVisible && (
+        <button onClick={onClick} className={css.button}>
+          Load more
+        </button>
+      )}
+    </>
+  );
+};

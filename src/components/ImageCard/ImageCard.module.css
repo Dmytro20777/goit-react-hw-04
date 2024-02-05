@@ -4,8 +4,6 @@
     align-items: center;
     justify-content: center;
 
-    height: 100%;
-
     background-color: #f2f2f2;
 
     border: 4px solid #fff;
@@ -19,6 +17,14 @@
     flex-shrink: 1;
 
     margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .img {
